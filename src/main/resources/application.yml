@@ -1,1 +1,16 @@
-{}
+
+quarkus:
+
+  http:
+    cors: true
+
+  log:
+    level: INFO
+
+  oidc:
+    auth-server-url: https://my.keycloak.server.com
+    client-id: my-client-id
+    credentials:
+      secret: xxxxxxxxxxxx
+    tls:
+      verification: none
